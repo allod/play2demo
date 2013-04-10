@@ -1,0 +1,28 @@
+@(profileOption: Option[Profile])
+
+@main("View profile") {
+    @profileOption.map { profile =>
+        <div class="profile-details">
+            <p>
+                <label for="firstName" >First Name</label>
+                <input id="firstName" type="text" value="@profile.firstName" readonly="readonly">
+            </p>
+            <p>
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" value="@profile.lastName" readonly="readonly">
+            </p>
+            <p>
+                <label for="summary">Summary</label>
+                <textarea id="summary" readonly="readonly">@profile.summary</textarea>
+            </p>
+            <p>
+                <label for="experience" >Experience</label>
+                <textarea id="experience" readonly="readonly">@profile.experience</textarea>
+            </p>
+        </div>
+    }.getOrElse {
+        <div>
+            <em>Nothing to display</em>
+        </div>
+    }
+}

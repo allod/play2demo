@@ -1,0 +1,139 @@
+body{
+    background:#f8f8f8;
+    font:13px Sans-Serif, Helvetica, Arial;
+    color:#333;
+    line-height:160%;
+    margin:0;
+    padding:0;
+}
+
+h1{
+    font-size:200%;
+    font-weight:normal;
+}
+h2, h3, h4, h5, h6{
+    font-weight:normal;
+    margin:1em 0;
+}
+h2{
+    font-size:160%;
+}
+h3{
+    font-size:140%;
+}
+h4{
+    font-size:120%;
+}
+
+table, input, textarea, select, li{
+    font:100% Sans-Serif, Helvetica, Arial;
+    line-height:160%;
+    color:#333;
+}
+p, blockquote, ul, ol, form{
+    margin:1em 0;
+}
+blockquote{
+}
+img{
+    border:none;
+}
+hr{
+    display:none;
+}
+table{
+    margin:1em 0;
+    width:100%;
+    border-collapse:collapse;
+}
+th, td{
+    padding:2px 5px;
+}
+th{
+    text-align:left;
+}
+li{
+    display:list-item;
+}
+
+#content{
+    margin:0 auto;
+    width:800px;
+    text-align:left;
+}
+
+
+.profile-details{
+    margin:1em 0;
+    padding-top:10px;
+}
+.profile-details fieldset{
+    margin:0;
+    padding:0;
+    border:none;
+    float:left;
+    display:inline;
+    width:260px;
+    margin-left:25px;
+}
+.profile-details legend{display:none;}
+.profile-details p{margin:.5em 0;}
+.profile-details label{display:block;}
+.profile-details input, .profile-details textarea{
+    width:500px;
+    border:1px solid #ddd;
+    padding:3px;
+}
+.profile-details textarea{
+    height:200px;
+    overflow:auto;
+}
+.profile-details p.submit{
+    clear:both;
+    padding:0 25px 20px 25px;
+    margin:0;
+    text-align:right;
+}
+.profile-details button{
+    width:150px;
+    height:37px;
+    line-height:37px;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+}
+
+#content ul a {
+    display: block;
+    padding: 3px 0 3px 10px;
+    margin: 2px 0;
+    border-left: 4px solid #EEE;
+    font-size: 15px;
+}
+
+#content ul a:hover {
+    border-color: #9DD745;
+}
+
+a {
+    text-decoration:none;
+    color: #69AF04;
+}
+
+a:hover {
+    color: #4E870A;
+}
+
+ul {
+    list-style: none;
+}
+
+dd {
+    margin-left: 0;
+}
+
+dd.error {
+    color: red;
+    text-align: left;
+}

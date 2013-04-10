@@ -1,0 +1,11 @@
+@(profiles: Seq[Profile])
+
+@main("Welcome, we have %s profiles!".format(profiles.size)) {
+    <h1>List of @profiles.size profiles</h1>
+
+    <ul>
+        @profiles.map { profile =>
+            <li><a href="@routes.Profiles.view(profile.id.get)">@profile.firstName @profile.lastName</a></li>
+        }
+    </ul>
+}
